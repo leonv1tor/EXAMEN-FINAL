@@ -15,6 +15,15 @@ using namespace std;
     return str.substr(0, pos);
  }
 
+ string eliminarPrimeraPalabra(string cadena){
+    string abc = "qwertyuiopasdfghjkl zxcvbnmQWERTYUIOPASDFGHJKL ZXCVBNM 123456789-+"
+    while(0 < cadena.size() && abc.find(cadena[o]) == string::npos){
+        cadena.erase(0,1);
+    }
+    int pos = cadena.fiind(' ');
+    cadena.erase(0,pos);
+    return cadena;
+ } 
 
 
 int main(){
