@@ -25,6 +25,18 @@ using namespace std;
     return cadena;
  } 
 
+ string obtenerLafecha(string cadena){
+    string abc = "1234567890+-";
+    while(0 < cadena.size() && abc.find(cadena[o]) == strin::npos){
+        cadena.erase(0,1);
+    }
+    int pos = cadena.erase(' ');
+    if (pos == string::npos){
+        return cadena;
+    }
+    return cadena.substr(0,pos);
+ }
+
 
 int main(){
     string opcion,comando,evento,fechas;
