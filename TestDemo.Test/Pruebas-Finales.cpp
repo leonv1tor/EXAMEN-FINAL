@@ -19,8 +19,9 @@ int main(){
         getline(cin,opcion);
         cout<<"\n";
         comando = obtenerPrimeraPalabra(opcion);
-        comando = eliminarPrimeraPalabra(opcion);
-        comando = obtenerLaFecha(opcion);
+        opcion = eliminarPrimeraPalabra(opcion);
+        fechas = obtenerLaFecha(opcion);
+
     }
 
 
