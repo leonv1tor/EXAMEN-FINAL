@@ -43,7 +43,7 @@ int main(){
         cout<<"\n";
         comando = obtenerPrimeraPalabra(opcion);
         opcion  = eliminarPrimeraPalabra(opcion);
-
+        fechas = obtenerLafecha(opcion);
     }
 
 
