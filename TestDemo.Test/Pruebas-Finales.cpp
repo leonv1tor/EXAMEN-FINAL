@@ -19,6 +19,7 @@ int main(){
         getline(cin,opcion);
         cout<<"\n";
         comando = obtenerPrimeraPalabra(opcion);
+        comando = eliminarPrimeraPalabra(opcion);
     }
 
 
