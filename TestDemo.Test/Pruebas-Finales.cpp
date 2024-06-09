@@ -18,6 +18,7 @@ int main(){
         cout << " Escriba su opcion: ";
         getline(cin,opcion);
         cout<<"\n";
+        comando = obtenerPrimeraPalabra(opcion);
     }
 
 
