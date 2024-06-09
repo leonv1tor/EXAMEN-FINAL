@@ -3,6 +3,20 @@
 
 using namespace std;
 
+ string obtenerPrimeraPalabra( string str){
+    string abc = "qwertyuiopasdfghjkl zxcvbnQERTYUIOPASDFGHJKL ZXCVBNM";
+    while(0 < str.size() && abc.find(str[0]) == string::npos){
+        str.erase(0,1);
+    }
+    int pos = str.find(' ');
+    if (pos == string::npos){
+        return str;
+    }
+    return str.substr(0, pos);
+ }
+ 
+
+
 int main(){
     string opcion,comando,evento,fechas;
     int identificadorUnico = 1;
@@ -19,10 +33,8 @@ int main(){
         getline(cin,opcion);
         cout<<"\n";
         comando = obtenerPrimeraPalabra(opcion);
-        opcion = eliminarPrimeraPalabra(opcion);
-        fechas = obtenerLaFecha(opcion);
-        opcion = eliminarPrimeraPalabra(opcion);
-        evento = obtenerPrimeraPalabra(opcion);
+
+
     }
 
 
