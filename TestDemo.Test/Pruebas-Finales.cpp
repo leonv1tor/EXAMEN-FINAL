@@ -20,6 +20,7 @@ int main(){
         cout<<"\n";
         comando = obtenerPrimeraPalabra(opcion);
         comando = eliminarPrimeraPalabra(opcion);
+        comando = obtenerLaFecha(opcion);
     }
 
 
