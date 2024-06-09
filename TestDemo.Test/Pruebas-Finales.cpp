@@ -20,7 +20,7 @@ using namespace std;
     while(0 < cadena.size() && abc.find(cadena[o]) == string::npos){
         cadena.erase(0,1);
     }
-    int pos = cadena.fiind(' ');
+    int pos = cadena.find(' ');
     cadena.erase(0,pos);
     return cadena;
  } 
@@ -30,7 +30,7 @@ using namespace std;
     while(0 < cadena.size() && abc.find(cadena[o]) == strin::npos){
         cadena.erase(0,1);
     }
-    int pos = cadena.erase(' ');
+    int pos = cadena.find(' ');
     if (pos == string::npos){
         return cadena;
     }
