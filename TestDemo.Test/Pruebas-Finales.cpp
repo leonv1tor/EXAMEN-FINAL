@@ -22,7 +22,7 @@ int main(){
         opcion = eliminarPrimeraPalabra(opcion);
         fechas = obtenerLaFecha(opcion);
         opcion = eliminarPrimeraPalabra(opcion);
-        
+        evento = obtenerPrimeraPalabra(opcion);
     }
 
 
