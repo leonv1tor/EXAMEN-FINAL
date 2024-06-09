@@ -21,7 +21,8 @@ int main(){
         comando = obtenerPrimeraPalabra(opcion);
         opcion = eliminarPrimeraPalabra(opcion);
         fechas = obtenerLaFecha(opcion);
-
+        opcion = eliminarPrimeraPalabra(opcion);
+        
     }
 
 
