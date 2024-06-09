@@ -14,7 +14,7 @@ using namespace std;
     }
     return str.substr(0, pos);
  }
- 
+
 
 
 int main(){
@@ -33,7 +33,7 @@ int main(){
         getline(cin,opcion);
         cout<<"\n";
         comando = obtenerPrimeraPalabra(opcion);
-
+        opcion  = eliminarPrimeraPalabra(opcion);
 
     }
 
