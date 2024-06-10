@@ -86,14 +86,52 @@ A pesar de la existencia de estos sistemas de bases de datos robustos y bien est
 3. Estructura del Repositorio
 
 
-//EXPLICAR DE COMO ESTA COMPUESTO EL REPOSITORIO
+l30n3l/
+
+    Program.cs
+    README.md
+    .gitignore
+    bin/
+        Debug/
+        Release/
+    obj/
+        Debug/
+        Release/
+    src/
+        MainProgram.cs
+        Utilities.cs
+    test/
+        TestMainProgram.cs
+        TestUtilities.cs
+    docs/
+        Manual.md
+        Diagrams/
+            flowchart.png
+            flowchart_description.md
+    lib/    
+        library.dll
+        dependency.dll
 
 
 4. Pseudocodigo
 
+4.1 Funcion obtener la Primera palabra
 
-//FOTOS DE LOS PSEUDOCODIGOSS REALIZADOS
+![alt text](image-1.png)
+![alt text](image-2.png)
 
+4.2 Eliminar Primera Palabra
+
+![alt text](image-3.png)
+
+4.3 Obtener La Fecha
+
+![alt text](image-4.png)
+
+4.4 Agregar Evento
+
+![alt text](image-5.png)
+![alt text](image-6.png)
 
 5. Creditos - Las personas que contribuyeron al proyecto
 
@@ -106,28 +144,28 @@ Leandro Joe Jaldin Gutierrez
 
 
 1.	https://www.youtube.com/watch?v=AEUPlMPFzDQ
-Como hacer un menu en C++ con do while (menú) - Fundamentos de Programación - 19
+    Como hacer un menu en C++ con do while (menú) - Fundamentos de Programación - 19
 
 En este video me guie  como hacer un menú para nuestra base de datos y  nos ayuda a conectar nuestra variable comando con con los comandos que van apareciendo en nuestro menú como Add, Del, Find, Print y nuestra opción salir.
 
 2.	https://www.youtube.com/watch?v=OxrBnQcDlf8
-Lenguaje C, programa para buscar una palabra en una frase, cadenas de caracteres, repetitivas
+    Lenguaje C, programa para buscar una palabra en una frase, cadenas de caracteres, repetitivas
 
 este video nos ayuda al Analís de la primera función de obtenerPrimeraPalabra en el conteo de las palabras desde cero hasta el primer espacio 
 
 4.	https://www.youtube.com/watch?v=mtxeDGMzoLY
-C++ : What does string::npos mean in this code?
+    C++ : What does string::npos mean in this code?
 
 En este video nos ayuda a entender cual es el significado de string::npos significa no encontrado, significa que el elemnto no se encuentra en la poasicion del elemnto en la cadena
 El retorno de string::npos significa que el elemnto no se encuentra en la cadena.
 
 4.	https://www.youtube.com/watch?v=BqnXcsZ7-6w
-La constante estática de la cadena npos
+    La constante estática de la cadena npos
 
 En este video nos ayuda a la comprecion de string:: npos , string es la cadena y npos significa no encontrado
 Si la cadena no es igual a npos entonces sale del while o del if y seguimos a delante.
 
-6.	https://www.youtube.com/watch?v=Yibwb3n1vm0
-Programa C++ para encontrar una subcadena en una cadena
+6.	https://www.youtube.com/watch?v=Yibwb3n1vm0 
+    Programa C++ para encontrar una subcadena en una cadena
 
 Como el titulo del video lo dice nos da ejemplos de como encontrar la subcadena en el caso del comando Add fecha evento nostros queremos saber cual es la subcadena en este caso queremos saber el comando que el usuario esta usuando en este caso Add
