@@ -3,10 +3,24 @@
 
 using namespace std;
 
+typedef map<int, vector<string>>map1;
+
 void pausar(){
     cout<<"\n Presione Enter para continuar...";
     getch(); //Cuando ingrese una tecla esta funcion come la tecla y recien sigue la sgts linea
     system("cls");
+}
+
+void agregarEvento(int id, string fecha, string nombreEvento){
+    bool bandera = false;
+    for(auto i = mapa1.begin(); i != mapa1.end(); ++i){
+        if (i->second[0] == fecha && i->second[1] == nombreEvento){
+            bandera = true;
+            break;
+        }
+    }
+    if(!bandera)
+        mapa1[id] = {fecha, nombreEvento};
 }
 
  string obtenerPrimeraPalabra( string str){
