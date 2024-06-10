@@ -23,6 +23,17 @@ void agregarEvento(int id, string fecha, string nombreEvento){
         mapa1[id] = {fecha, nombreEvento};
 }
 
+void imprimir(){
+    if(mapa1.empty()){
+        cout<<"No hay ningun Evento";
+    }else{
+        cout<<"Imprimiendo eventos: \n\n";
+        for(auto i = mapa1.begin(); i !=mapa1.end(); i++0){
+            cout<<i->second[0]<<" | "<<i->second[1]<<"\n";
+        }
+    }
+}
+
  string obtenerPrimeraPalabra( string str){
     string abc = "qwertyuiopasdfghjkl zxcvbnQERTYUIOPASDFGHJKL ZXCVBNM";
     while(0 < str.size() && abc.find(str[0]) == string::npos){
