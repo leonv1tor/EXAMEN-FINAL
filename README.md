@@ -153,7 +153,7 @@ En este video me guie  como hacer un menú para nuestra base de datos y  nos ayu
 
 este video nos ayuda al Analís de la primera función de obtenerPrimeraPalabra en el conteo de las palabras desde cero hasta el primer espacio 
 
-4.	https://www.youtube.com/watch?v=mtxeDGMzoLY
+3.	https://www.youtube.com/watch?v=mtxeDGMzoLY
     C++ : What does string::npos mean in this code?
 
 En este video nos ayuda a entender cual es el significado de string::npos significa no encontrado, significa que el elemnto no se encuentra en la poasicion del elemnto en la cadena
@@ -165,7 +165,18 @@ El retorno de string::npos significa que el elemnto no se encuentra en la cadena
 En este video nos ayuda a la comprecion de string:: npos , string es la cadena y npos significa no encontrado
 Si la cadena no es igual a npos entonces sale del while o del if y seguimos a delante.
 
-6.	https://www.youtube.com/watch?v=Yibwb3n1vm0 
+5.	https://www.youtube.com/watch?v=Yibwb3n1vm0 
     Programa C++ para encontrar una subcadena en una cadena
 
 Como el titulo del video lo dice nos da ejemplos de como encontrar la subcadena en el caso del comando Add fecha evento nostros queremos saber cual es la subcadena en este caso queremos saber el comando que el usuario esta usuando en este caso Add
+
+6.	https://www.youtube.com/watch?v=3tSwqsFzxi0
+   Mapas con Vectores en C++ | Tutoprogra
+En este video nos ayuda poder declarar un mapa y dentro de este un vector
+Y también podemos ver como acceder a la poscion del vector que esta dentro de un mapa en este caso seria  -> second de esta forma podemos acceder al vector.
+
+7.	https://www.youtube.com/watch?v=w7OwilQ_3XM
+   Tutorial sobre MAP en Lenguaje C++
+
+Este video nos ayuda aver como podemos iterar en el mapa con el bucle for y sus condiciones que serian for(i = mapa1.begin(); i != mapa1.end(); ++i)
+Y también podemos observar como acceder a sus posiciones con los poderosos first y second. 
