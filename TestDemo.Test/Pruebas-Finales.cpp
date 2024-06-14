@@ -1,14 +1,16 @@
 #include <iostream>
 #include <string>
+#include <vector>
+#include <map>
 
 using namespace std;
 
-typedef map<int, vector<string>>map1;
+map<int, vector<string>>map1;
 
 void pausar(){
     cout<<"\n Presione Enter para continuar...";
     getch(); //Cuando ingrese una tecla esta funcion come la tecla y recien sigue la sgts linea
-    system("cls");
+    system("cls"); //Esperamos a que se precione enter
 }
 
 void agregarEvento(int id, string fecha, string nombreEvento){
