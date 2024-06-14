@@ -100,12 +100,13 @@ int main(){
             eliminarEvento(fechas,evento);
         }else if(comando == "print"){
             imprimir();
-        
+        }else if(comando == "Find"){
+            buscandoEventoConFecha(fechas);
+        }else{
+            cout<<"Comando Incorrecto";
         }
-
-        }
-        }
-    }
+        pausar();
+    }while(comando != "salir");
 
 
     return 0;
