@@ -89,6 +89,20 @@ int main(){
         fechas = obtenerLafecha(opcion);
         opcion = eliminarPrimeraPalabra(opcion);
         evento = obtenerPrimeraPalabra(opcion);
+
+        if(comando == "Add"){
+            agregarEvento(identificadorUnico,fechas,evento);
+            identificadorUnico += 1;
+
+        }else if(comando == "Del"){
+            eliminarEvento(fechas,evento);
+        }else if(comando == "print"){
+            imprimir();
+        
+        }
+
+        }
+        }
     }
 
 
