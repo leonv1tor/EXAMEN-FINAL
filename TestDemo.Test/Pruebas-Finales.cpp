@@ -8,9 +8,9 @@ using namespace std;
 map<int, vector<string>>map1;
 
 void pausar(){
-    cout<<"\n Presione Enter para continuar...";
-    getch(); //Cuando ingrese una tecla esta funcion come la tecla y recien sigue la sgts linea
-    system("cls"); //Esperamos a que se precione enter
+    cout<<"\n Presione Enter para continuar:";
+    cin.ignore(); //Cuando ingrese una tecla esta funcion come la tecla y recien sigue la sgts linea
+    cin.get(); //Esperamos a que se precione enter
 }
 
 void agregarEvento(int id, string fecha, string nombreEvento){
