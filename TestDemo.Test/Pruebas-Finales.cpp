@@ -108,6 +108,5 @@ int main(){
         pausar();
     }while(comando != "salir");
 
-
     return 0;
 }
