@@ -41,7 +41,13 @@ void eliminarEvento(string fecha, string evento){
     }
 }
 
-
+void buscarEventoConFecha(string fecha){
+    for(auto i = mapa1.begin(); i != mapa1.end(); ++i){
+        if(i -> second[0] == fecha){
+            cout<<i -> second[0]<< "|" << i -> second[1]<<"\n";
+        }
+    }
+}
 
 void imprimir(){
     if(mapa1.empty()){
