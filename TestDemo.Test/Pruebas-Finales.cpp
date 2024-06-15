@@ -16,7 +16,7 @@ void pausar(){
 void agregarEvento(int id, string fecha, string nombreEvento){//Para esta funcion necesitaremos map y vector
     bool bandera = false; //Determinar si hay un evento con las misma fecha
     for(auto i = mapa1.begin(); i != mapa1.end(); ++i){
-        if (i->second[0] == fecha && i->second[1] == nombreEvento){//Este se debe seguir iterando mientras que i no haya alcanzado el final del contenedor
+        if(i->second[0] == fecha && i->second[1] == nombreEvento){//Este se debe seguir iterando mientras que i no haya alcanzado el final del contenedor
             bandera = true;//indica que se encontro un evento con la misma fecha y nombre
             break;
         }
@@ -34,7 +34,7 @@ void imprimir(){
         cout<<"No hay ningun Evento\n";
     }else{
         cout<<"Imprimiendo eventos: \n\n";
-        for(auto i = mapa1.begin(); i !=mapa1.end(); i++){
+        for(auto i = mapa1.begin(); i !=mapa1.end(); ++i){
             cout<<i->second[0]<<" | "<<i->second[1]<<"\n";
         }
     }
