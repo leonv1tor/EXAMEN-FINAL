@@ -76,7 +76,7 @@ string obtenerPrimeraPalabra(string str){
 
  string obtenerLafecha(string cadena){
     string abc = "1234567890+-";
-    while(0 < cadena.size() && abc.find(cadena[o]) == strin::npos){
+    while(0 < cadena.size() && abc.find(cadena[o]) == string::npos){
         cadena.erase(0,1);
     }
     int pos = cadena.find(' ');
@@ -91,7 +91,7 @@ int main(){
     string opcion,comando,evento,fechas;
     int identificadorUnico = 1;
     do{
-        system("cls")
+        system("cls");
         cout << "\t\t\t\t Resgistro de eventos \t\t\t\t \n\n";
         cout << "Para Agregar nuevo evento se usa el comando: Add: \n\n";
         cout << "Para Eliminar evento se usa el comando: Del \n\n";
@@ -114,10 +114,10 @@ int main(){
 
         }else if(comando == "Del"){
             eliminarEvento(fechas,evento);
-        }else if(comando == "print"){
+        }else if(comando == "Print"){
             imprimir();
         }else if(comando == "Find"){
-            buscandoEventoConFecha(fechas);
+            buscarEventoConFecha(fechas);
         }else{
             cout<<"Comando Incorrecto";
         }
