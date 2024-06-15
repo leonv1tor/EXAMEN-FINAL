@@ -34,7 +34,7 @@ void imprimir(){
         cout<<"No hay ningun Evento\n";
     }else{
         cout<<"Imprimiendo eventos: \n\n";
-        for(auto i = mapa1.begin(); i !=mapa1.end(); i++0){
+        for(auto i = mapa1.begin(); i !=mapa1.end(); i++){
             cout<<i->second[0]<<" | "<<i->second[1]<<"\n";
         }
     }
