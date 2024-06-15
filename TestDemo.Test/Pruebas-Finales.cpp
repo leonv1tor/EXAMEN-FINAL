@@ -13,17 +13,17 @@ void pausar(){
     cin.get(); //Esperamos a que se precione enter
 }
 
-void agregarEvento(int id, string fecha, string nombreEvento){//Para esta funcion necesitaremos map y vector
-    bool bandera = false; //Determinar si hay un evento con las misma fecha
+void agregarEvento(int id, string fecha, string nombreEvento){ // para esta funcion necesitares map y vector
+    bool bandera = false; // determina si ya hay un evento con la misma fecha
     for(auto i = mapa1.begin(); i != mapa1.end(); ++i){
-        if(i->second[0] == fecha && i->second[1] == nombreEvento){//Este se debe seguir iterando mientras que i no haya alcanzado el final del contenedor
-            bandera = true;//indica que se encontro un evento con la misma fecha y nombre
+        if(i ->second[0] == fecha && i ->second[1] == nombreEvento){ // debe seguir iterando mientras que i no haya alcanzado el final del contenedor
+            bandera = true;  //indica que se encontro un evento con la misma fecha y nombre 
             break;
         }
     }
-    if(!bandera){//Verifica si la variable de la bandera es falso
-        mapa1[id] = {fecha, nombreEvento};//Declaramos el nuevo evento del mapa
-        cout<<"Evengo agregado con exito";
+    if(!bandera){    //verifica si la variable bandera es falso 
+        mapa1[id] = {fecha, nombreEvento};   //asigan el nuevo elemnto al mapa
+        cout<<"Evento agregado con exito";
     }else{
         cout<<"Ya hay un evento con la misma fecha y nombre";
     }
