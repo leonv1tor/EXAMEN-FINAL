@@ -31,7 +31,7 @@ void agregarEvento(int id, string fecha, string nombreEvento){//Para esta funcio
 
 void imprimir(){
     if(mapa1.empty()){
-        cout<<"No hay ningun Evento";
+        cout<<"No hay ningun Evento\n";
     }else{
         cout<<"Imprimiendo eventos: \n\n";
         for(auto i = mapa1.begin(); i !=mapa1.end(); i++0){
