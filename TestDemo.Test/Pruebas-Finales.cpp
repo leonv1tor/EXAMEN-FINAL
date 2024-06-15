@@ -29,17 +29,19 @@ void agregarEvento(int id, string fecha, string nombreEvento){ // para esta func
     }
 }
 
-void eliminarEvento(string fecha, string eveto){
+void eliminarEvento(string fecha, string evento){
     bool bandera = false;
     for(auto i = mapa.begin(); i != mapa.end(); ++i){
         if(i->second[0] == fecha && i->second[1] == evento){
             mapa1.erase(i);
-            cout << "Se alimino correctamente\n"
+            cout << "Se alimino correctamente\n";
             bandera = true;
             break;
         }
     }
 }
+
+
 
 void imprimir(){
     if(mapa1.empty()){
@@ -76,7 +78,7 @@ string obtenerPrimeraPalabra(string str){
 
  string obtenerLafecha(string cadena){
     string abc = "1234567890+-";
-    while(0 < cadena.size() && abc.find(cadena[o]) == string::npos){
+    while(0 < cadena.size() && abc.find(cadena[0]) == string::npos){
         cadena.erase(0,1);
     }
     int pos = cadena.find(' ');
