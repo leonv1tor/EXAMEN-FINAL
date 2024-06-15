@@ -53,7 +53,7 @@ void imprimir(){
  }
 
  string eliminarPrimeraPalabra(string cadena){
-    string abc = "qwertyuiopasdfghjkl zxcvbnmQWERTYUIOPASDFGHJKL ZXCVBNM 123456789-+"
+    string abc = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM 123456789-+"
     while(0 < cadena.size() && abc.find(cadena[o]) == string::npos){
         cadena.erase(0,1);
     }
