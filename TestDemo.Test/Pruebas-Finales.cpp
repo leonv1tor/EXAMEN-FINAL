@@ -5,7 +5,7 @@
 
 using namespace std;
 
-map<int, vector<string>>map1;
+map<int, vector<string>>mapa1;
 
 void pausar(){
     cout<<"\n Presione Enter para continuar:";
