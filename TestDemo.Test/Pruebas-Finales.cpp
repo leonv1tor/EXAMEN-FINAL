@@ -31,7 +31,7 @@ void agregarEvento(int id, string fecha, string nombreEvento){ // para esta func
 
 void eliminarEvento(string fecha, string evento){
     bool bandera = false;
-    for(auto i = mapa.begin(); i != mapa.end(); ++i){
+    for(auto i = mapa1.begin(); i != mapa1.end(); ++i){
         if(i->second[0] == fecha && i->second[1] == evento){
             mapa1.erase(i);
             cout << "Se alimino correctamente\n";
