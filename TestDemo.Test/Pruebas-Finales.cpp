@@ -41,7 +41,7 @@ void imprimir(){
 }
 
  string obtenerPrimeraPalabra( string str){
-    string abc = "qwertyuiopasdfghjkl zxcvbnQERTYUIOPASDFGHJKL ZXCVBNM";
+    string abc = "qwertyuiopasdfghjklzxcvbnQERTYUIOPASDFGHJKLZXCVBNM";
     while(0 < str.size() && abc.find(str[0]) == string::npos){
         str.erase(0,1);
     }
