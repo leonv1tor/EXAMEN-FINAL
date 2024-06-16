@@ -23,9 +23,6 @@ void agregarEvento(int id, string fecha, string nombreEvento){ // para esta func
     }
     if(!bandera){    //verifica si la variable bandera es falso 
         mapa1[id] = {fecha, nombreEvento};   //asigan el nuevo elemnto al mapa
-        cout<<"Evento agregado con exito";
-    }else{
-        cout<<"Ya hay un evento con la misma fecha y nombre";
     }
 }
 
