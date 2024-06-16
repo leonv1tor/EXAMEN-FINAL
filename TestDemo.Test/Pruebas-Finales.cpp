@@ -9,7 +9,7 @@ map<int, vector<string>>mapa1;
 
 void pausar(){
     cout<<"\n Presione Enter para continuar:";
-    cin.ignore(); //Cuando ingrese una tecla esta funcion come la tecla y recien sigue la sgts linea
+    cin.ignore(); //Limpia la entrada y no vmos las entradas pasadas
     cin.get(); //Esperamos a que se precione enter
 }
 
